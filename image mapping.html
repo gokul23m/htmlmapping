@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="image mapping.css">
+    <title>ipl 2022</title>
+    </head>
+  <body>
+      <div class="heading">
+         <h1> IPL 2022 </h1>
+         <h1>  Start from march 26</h1>
+      </div>
+      <div class="map">
+          <img src="iplteams.jpg" alt="iplteams" usemap="#ipl" width="70%" height="300px">
+          <map name="ipl">
+            <area shape="rect" coords="30,40,150,150" href="csk.html" onmouseover="writetext('4 times champion')">
+            <span class="tt"></span>
+            <area shape="rect" coords="180,40,320,150" href="dc.html" onmouseover="writetext('1 time finalist')">
+            <area shape="rect" coords="370,40,480,150" href="kkr.html" onmouseover="writetext('2 times champion')">
+            <area shape="rect" coords="510,40,710,150" href="mi.html"  onmouseover="writetext('5 times champion')">
+            <area shape="rect" coords="730,40,880,150" href="lsg.html" onmouseover="writetext('new team')">
+            <area shape="rect" coords="30,180,170,280" href="rr.html" onmouseover="writetext('1 time champion')">
+            <area shape="rect" coords="190,180,340,280" href="pbks.html" onmouseover="writetext('1 time finalist')">
+            <area shape="rect" coords="360,180,500,280" href="srh.html" onmouseover="writetext('2  time finalist')">
+            <area shape="rect" coords="540,180,680,280" href="rcb.html" onmouseover="writetext('3 time finalist')">
+            <area shape="rect" coords="720,180,880,280" href="gt.html" onmouseover="writetext('new team')">
+          </map>
+      </div>
+      <p id="description">Mouse over a team </p>
+      <script>
+        function writetext(txt){
+          document.getElementById("description").innerHTML=txt;
+        }
+      </script>
+  </body>
+</html>
